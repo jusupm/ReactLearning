@@ -17,6 +17,7 @@ function Table({ data, onDelete }) {
           {data && data.map((row,index) => (
             <TableRow onDelete={() => onDelete(index)} firstName={row.firstName} lastName={row.lastName} bio={row.bio} image={row.image}/>
           ))}
+          
         </tbody>
       </table>
     </div>
